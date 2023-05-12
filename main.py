@@ -1,7 +1,6 @@
 import psycopg2
 
 def create_tables(conn):
-    # conn = psycopg2.connect(database="client", user="postgres", password="Alena14")
     cur = conn.cursor()
     cur.execute("""
     CREATE TABLE IF NOT EXISTS clients (
